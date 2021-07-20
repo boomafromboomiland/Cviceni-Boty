@@ -2,9 +2,88 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    max-width: 670px;
+    max-height: 440px;
+    background-color: #f5f5f5;
 }
+
+.zbozi {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 5px #959595;
+}
+
+.vizual {
+    display: flex;
+    width: 335px;
+    background: rgb(6,215,193);
+    background: linear-gradient(90deg, rgba(6,215,193,1) 35%, rgba(80,204,73,1) 100%);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+img.bota {
+    position: absolute;
+    left:-150px;
+    bottom: -90px;px;
+}
+
+img.logo {
+    position: absolute;
+    top:30px;
+    left:130px;
+}
+
+.slogan {
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0px 0px 0px;
+}
+
+.cenovka {
+    color: white;
+    position: absolute;
+    top: 370px;
+    left: 270px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.detaily {
+    display: inline;
+    width: 335px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: white;
+}
+
+.nazev {
+    
+}
+
+
 
 /*
  BARVY
