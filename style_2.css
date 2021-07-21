@@ -1,0 +1,148 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    max-width: 670px;
+    background-color: #f5f5f5;
+}
+
+.zbozi {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 5px #959595;
+    border-radius: 6px;
+}
+
+.vizual {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    background: rgb(6,215,193);
+    background: linear-gradient(180deg, rgba(6,215,193,1) 35%, rgba(80,204,73,1) 100%);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+img.bota {
+    position: absolute;
+    left:-150px;
+    bottom: -90px;
+}
+
+img.logo {
+    position: absolute;
+    top:30px;
+    left:130px;
+}
+
+.slogan {
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0px;
+}
+
+.cenovka {
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 270px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.detaily {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 30px 30px;
+    width: 335px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: white;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.produkt {
+    font-size: 14px;
+    font-weight: 400;
+    color: #959595;
+}
+
+.popis {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    padding: 15px 0px 30px 0px;
+    border-bottom: 2px solid #06d7c1;
+}
+
+.parametr {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.velikosti {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px 0px 50px 0px;
+}
+
+.vybrana {
+    border: solid 1px red;
+    border-radius: 50%;
+    padding: 3px;
+    color: red;
+}
+
+.tlacitko {
+    border-radius: 4px;
+    color: white;
+    background-color: #f15f42;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tlacitko:hover {
+    background-color: white;
+    color: #f15f42;
+    border-radius: 2px solid #f15f42;
+    border: 2px solid #f15f42;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
